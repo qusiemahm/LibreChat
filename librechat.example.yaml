@@ -254,6 +254,21 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: 'Portkey'
       iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf
+
+    #deepseek
+    - name: "Deepseek"
+      apiKey: "${DEEPSEEK_API_KEY}"  # Or replace with your actual API key
+      baseURL: "https://api.deepseek.com/v1"
+      models:
+        default: ["deepseek-chat", "deepseek-coder"]
+        fetch: false
+      titleConvo: true
+      # titleMethod: "completion"
+      titleModel: "current_model"
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false
+      modelDisplayLabel: "Deepseek"
 # fileConfig:
 #   endpoints:
 #     assistants:
